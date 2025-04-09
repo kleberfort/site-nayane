@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trilha de CSS</title>
+
+
+<Style>
+
+/* Menu de categorias */
+.categoria-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  padding: 16px;
+  justify-content: center;
+  background-color: #f8f8f8;
+  margin: 0;
+}
+
+.categoria-menu ul li {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.categoria-menu ul li:hover {
+  background-color: #ddd;
+}
+
+/* Grade de produtos */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.product-item {
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.product-info {
+  padding: 16px;
+}
+
+.product-title {
+  font-size: 18px;
+  margin: 12px 0 8px;
+}
+
+.product-price {
+  font-size: 16px;
+  color: #2a9d8f;
+  margin-bottom: 12px;
+}
+
+.product-button {
+  padding: 10px 16px;
+  background-color: #e76f51;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-button:hover {
+  background-color: #d65f41;
+}
+</Style>
+
+</head>
+
+<body>
+
+    <div>
+        <img width="1400" height="620" src="https://acdn-us.mitiendanube.com/stores/001/703/244/themes/new_linkedman/1-slide-1666618768620-5897289669-9192db12f8955e1966d0e628ad43d5df1666618774-1024-1024.png?1817293191">
+      </div>
+    
+      <div>
+        <h2>O sucesso de vocês, é o nosso sucesso!</h2>
+      </div>
+    
+      <!-- Seção de categorias -->
+      <section class="categoria-menu">
+        <ul>
+          <li>T-SHIRTS</li>
+          <li>SEMI-CROPPED</li>
+          <li>BORDADA</li>
+          <li>KIT LD</li>
+          <li>MENEGOTTI</li>
+          <li>TRICÔ</li>
+          <li>MAX BLUSÃO</li>
+        </ul>
+      </section>
+    
+      <!-- Grid de produtos -->
+      <div class="product-grid">
+        <!-- Produto 1 -->
+        <div class="product-item">
+          <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/impacto/media/uploads/produtos/foto/yqloolhw/smiling-woman-tshirt-mockup-with-pink-wall-0045.jpg" alt="Produto" class="product-image">
+          <div class="product-info">
+            <h2 class="product-title">Camiseta Feminina</h2>
+            <p class="product-price">R$ 99,90</p>
+            <button class="product-button">Comprar</button>
+          </div>
+        </div>
+    
+        <!-- Você pode repetir só os blocos .product-item aqui dentro -->
+        <!-- Produto 2 -->
+        <div class="product-item">
+          <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/impacto/media/uploads/produtos/foto/yqloolhw/smiling-woman-tshirt-mockup-with-pink-wall-0045.jpg" alt="Produto" class="product-image">
+          <div class="product-info">
+            <h2 class="product-title">Camiseta Oversized</h2>
+            <p class="product-price">R$ 109,90</p>
+            <button class="product-button">Comprar</button>
+          </div>
+        </div>
+
+        <div class="product-item">
+            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/impacto/media/uploads/produtos/foto/yqloolhw/smiling-woman-tshirt-mockup-with-pink-wall-0045.jpg" alt="Produto" class="product-image">
+            <div class="product-info">
+              <h2 class="product-title">Camiseta Oversized</h2>
+              <p class="product-price">R$ 109,90</p>
+              <button class="product-button">Comprar</button>
+            </div>
+          </div>
+
+          <div class="product-item">
+            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/impacto/media/uploads/produtos/foto/yqloolhw/smiling-woman-tshirt-mockup-with-pink-wall-0045.jpg" alt="Produto" class="product-image">
+            <div class="product-info">
+              <h2 class="product-title">Camiseta Oversized</h2>
+              <p class="product-price">R$ 109,90</p>
+              <button class="product-button">Comprar</button>
+            </div>
+          </div>
+    
+        <!-- Adicione quantos produtos quiser -->
+      </div>
+
+    
+</body>
+
+
+
+
+</html>
