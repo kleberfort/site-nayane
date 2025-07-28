@@ -4,92 +4,42 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Trilha de CSS</title>
+    <title>Menu de Navegação</title>
 
+      <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
 
-<Style>
+    nav {
+      background-color: #333;
+    }
 
-/* Menu de categorias */
-.categoria-menu ul {
-  display: flex;
-  list-style: none;
-  gap: 16px;
-  padding: 16px;
-  justify-content: center;
-  background-color: #f8f8f8;
-  margin: 0;
-}
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
 
-.categoria-menu ul li {
-  cursor: pointer;
-  font-weight: bold;
-  padding: 8px 12px;
-  border-radius: 4px;
-  transition: background 0.3s;
-}
+    nav ul li {
+      margin: 0;
+    }
 
-.categoria-menu ul li:hover {
-  background-color: #ddd;
-}
+    nav ul li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding: 15px 20px;
+      transition: background-color 0.3s ease;
+    }
 
-/* Grade de produtos */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 24px;
-  padding: 24px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.product-item {
-  background-color: #fff;
-  border: 1px solid #eee;
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-  transition: transform 0.3s;
-}
-
-.product-item:hover {
-  transform: translateY(-5px);
-}
-
-.product-image {
-  width: 100%;
-  height: auto;
-}
-
-.product-info {
-  padding: 16px;
-}
-
-.product-title {
-  font-size: 18px;
-  margin: 12px 0 8px;
-}
-
-.product-price {
-  font-size: 16px;
-  color: #2a9d8f;
-  margin-bottom: 12px;
-}
-
-.product-button {
-  padding: 10px 16px;
-  background-color: #e76f51;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.product-button:hover {
-  background-color: #d65f41;
-}
-</Style>
-
+    nav ul li a:hover,
+    nav ul li a.active {
+      background-color: #555;
+    }
+  </style>
 </head>
 
 <body>
@@ -98,67 +48,24 @@
         <img width="1000" height="420" src="image/logo.jpeg" >
       </div>
     
-      <div>
-        <h2>O sucesso de vocês, é o nosso sucesso!</h2>
-      </div>
+    <title>Menu de Navegação</title>
     
-      <!-- Seção de categorias -->
-      <section class="categoria-menu">
-        <ul>
-          <li>T-SHIRTS</li>
-          <li>SEMI-CROPPED</li>
-          <li>BORDADA</li>
-          <li>KIT LD</li>
-          <li>MENEGOTTI</li>
-          <li>TRICÔ</li>
-          <li>MAX BLUSÃO</li>
-        </ul>
-      </section>
-    
-      <!-- Grid de produtos -->
-      <div class="product-grid">
-        <!-- Produto 1 -->
-        <div class="product-item">
-          <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/impacto/media/uploads/produtos/foto/yqloolhw/smiling-woman-tshirt-mockup-with-pink-wall-0045.jpg" alt="Produto" class="product-image">
-          <div class="product-info">
-            <h2 class="product-title">Camiseta Feminina</h2>
-            <p class="product-price">R$ 99,90</p>
-            <button class="product-button">Comprar</button>
-          </div>
-        </div>
-    
-        <!-- Você pode repetir só os blocos .product-item aqui dentro -->
-        <!-- Produto 2 -->
-        <div class="product-item">
-          <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/impacto/media/uploads/produtos/foto/yqloolhw/smiling-woman-tshirt-mockup-with-pink-wall-0045.jpg" alt="Produto" class="product-image">
-          <div class="product-info">
-            <h2 class="product-title">Camiseta Oversized</h2>
-            <p class="product-price">R$ 109,90</p>
-            <button class="product-button">Comprar</button>
-          </div>
-        </div>
 
-        <div class="product-item">
-            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/impacto/media/uploads/produtos/foto/yqloolhw/smiling-woman-tshirt-mockup-with-pink-wall-0045.jpg" alt="Produto" class="product-image">
-            <div class="product-info">
-              <h2 class="product-title">Camiseta Oversized</h2>
-              <p class="product-price">R$ 109,90</p>
-              <button class="product-button">Comprar</button>
-            </div>
-          </div>
+  <nav>
+    <ul>
+      <li><a href="#" class="active">T-SHIRTS</a></li>
+      <li><a href="#">SEMI-CROPPED</a></li>
+      <li><a href="#">BORDADA</a></li>
+      <li><a href="#">MENEGOTTI</a></li>
+    </ul>
+  </nav>
 
-          <div class="product-item">
-            <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/impacto/media/uploads/produtos/foto/yqloolhw/smiling-woman-tshirt-mockup-with-pink-wall-0045.jpg" alt="Produto" class="product-image">
-            <div class="product-info">
-              <h2 class="product-title">Camiseta Oversized</h2>
-              <p class="product-price">R$ 109,90</p>
-              <button class="product-button">Comprar</button>
-            </div>
-          </div>
+    <main>
+    <h1>Bem-vindo ao site!</h1>
+    <p>Conteúdo principal aqui.</p>
+  </main>
     
-        <!-- Adicione quantos produtos quiser -->
-      </div>
-
+     
     
 </body>
 
