@@ -1,0 +1,39 @@
+/* style.css */
+
+.logo {
+  text-align: center;
+  margin: 20px 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #555;
+}
