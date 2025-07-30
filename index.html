@@ -120,18 +120,22 @@
   </div>
 
 
-  <h2>LISTAS</h2>
+   <h2>Vídeo com Legenda</h2>
 
+  <video width="640" height="360" controls>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
 
-  <ul style="list-style-type: square ; ">
-    <li>Item 1</li>
-    <li>Item 2</li>
-    <ul>
-      <li>Subitem 1</li>
-      <li>Subitem 2</li>
-    </ul>
-    <li>Item 3</li>
-    <li>Item 4</li>
+        <!-- Faixa de legenda (em português) -->
+    <track 
+      src="legenda_pt.vtt" 
+      kind="subtitles" 
+      srclang="pt" 
+      label="Português" 
+      default>
+
+    Seu navegador não suporta a tag de vídeo.
+
+    </video>
 
   </main>
     
