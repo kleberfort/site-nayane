@@ -45,13 +45,19 @@
       margin: 5px 0;
     }
 
-    .produto button {
+    .produto button  {
       background-color: #28a745;
       color: white;
       border: none;
       padding: 8px 12px;
       border-radius: 4px;
       cursor: pointer;
+    }
+
+    h2{
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
     }
 
     .produto button:hover {
@@ -120,7 +126,7 @@
   </div>
 
 
-   <h2>Vídeo com Legenda</h2>
+   <h2 class="grupo">Vídeo com Legenda</h2>
 
   <video width="640" height="360" controls>
     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
@@ -135,7 +141,20 @@
 
     Seu navegador não suporta a tag de vídeo.
 
-    </video>
+    </video><br>
+
+    <h2>Vídeo do YouTube</h2>
+    <p>Este é um vídeo do youtube <span style="border: 2px solid #218838;">incorporado:</span> </p>
+
+   <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/JOrnGo2oc7o?controls=1&disablekb=1&enablejsapi=1&fs=0&iv_load_policy=3&modestbranding=1&showinfo=0&rel=0&html5=1&cc_load_policy=0&origin=https%3A%2F%2Fweb.dio.me&widgetid=1&forigin=https%3A%2F%2Fweb.dio.me%2Ftrack%2Fcoding-future-front-end-do-zero%2Fcourse%2Ffundamentos-do-css%2Flearning%2F094390d1-eaec-4929-8d0b-d87e93019944%3Fautoplay%3D1&aoriginsup=0&vf=6" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen>
+  </iframe>
+
 
   </main>
     
